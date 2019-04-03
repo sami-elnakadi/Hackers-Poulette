@@ -6,6 +6,9 @@ $pays = $_POST['pays'];
 $message = $_POST['message'];
 $genre = $_POST['genre'];
 $sujet = $_POST['sujet'];   
+
+$data = array ($nom, $prenom, $mail, $pays, $genre, $sujet, $message);
+print_r($data);
 ?>
 
 <main class="formPage">  
@@ -15,33 +18,33 @@ $sujet = $_POST['sujet'];
             <p> Pour tout renseignement, information, ou plainte, veuillez nous contacter via le formulaire ci-dessous. Nous nous ferons un plaisir de vous répondre dans les plus bref délais!</p>    
     <section class="mainForm">
         <div class="container form">   
-                <form class="col-md-12" role="form" name="inscription" method="post" action="index.php" id='form'>
+                <form class="col-md-12" role="form" name="inscription" method="post" action="view/formulaire.php" id='form'>
                     <div class = "row">
                         <div class="all col-md-6">  
                         
-                            <label for="name" >Nom:</label>
+                            <label for="lastname" >Nom:</label>
                             <input class="form-control" type="text" placeholder="Votre nom" name="nom" required>
                         
-                            <label for="name">Prénom:</label>
+                            <label for="firstname">Prénom:</label>
                             <input class="form-control" type="text" placeholder="Votre prénom" name="prenom" required/>
 
                             
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="homme" value="option1" checked>
+                                <input class="form-check-input" type="radio" name="genre" id="homme" value="homme" checked>
                                 <label class="form-check-label" for="genreH">
                                     Homme
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="femme" value="option2">
+                                <input class="form-check-input" type="radio" name="genre" id="femme" value="femme">
                                 <label class="form-check-label" for="genreF">
                                     Femme
                                 </label>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputEmail1">E-mail:</label>
-                                <input type="email" name="email" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Adresse e-mail" pattern=".+@"  required>
+                                <label for="InputEmail1">E-mail:</label>
+                                <input type="email" name="e-mail" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
                                 <small id="emailHelp" class="form-text text-muted">Nous ne partagerons votre e-mail avec personne</small>
                             </div>
                         </div>  
