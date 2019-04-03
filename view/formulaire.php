@@ -1,7 +1,7 @@
 <?php
-$nom = $_POST['name'];
+$nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
-$mail = $_POST['mail'];
+$mail = $_POST['e-mail'];
 $pays = $_POST['pays'];
 $message = $_POST['message'];
 $genre = $_POST['genre'];
