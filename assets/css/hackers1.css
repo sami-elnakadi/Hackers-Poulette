@@ -1,0 +1,44 @@
+@font-face { font-family: 'bellota'; src: url("fonts/Bellota-Regular.otf") format("otf"); font-weight: normal; font-style: normal; }
+
+body { overflow-x: hidden; background-color: #FFF; }
+
+p { font-family: 'bellota'; }
+
+#nav { background-color: #303030; position: fixed; width: 100vw; }
+
+nav ul { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+nav li { display: -webkit-box; display: -ms-flexbox; display: flex; padding-left: 30px; -ms-flex-item-align: center; align-self: center; }
+
+nav a { color: #FFF; font-size: 20px; font-family: bellota; }
+
+nav a:hover { text-decoration: none; color: #969393; }
+
+.qui { margin-top: 5vh; margin-bottom: 2vh; }
+
+.card-deck { margin-top: 5vh; margin-bottom: 2vh; }
+
+.formPage p { font-size: 25px; text-align: center; }
+
+form { border: 1px solid black; border-radius: 30px; background-color: #fff; color: #303030; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: bellota; margin-bottom: 2.5vh; padding-bottom: 2vh; padding-top: 1vh; }
+
+h2 { text-align: center; }
+
+.banner { /* The image used */ background-image: url("../img/bannTest.jpg"); /* Set a specific height */ height: 100vh; width: 100vw; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.imgForm { width: 300px; height: auto; display: block; margin-left: auto; margin-right: auto; }
+
+button { border: 1px white solid; border-radius: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-line-pack: center; align-content: center; }
+
+.mainForm { background-color: #13aea7; padding-top: 2.5vh; padding-bottom: 2.5vh; }
+
+.footer { position: relative; bottom: 0; left: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #303030; min-width: 100%; margin-bottom: -25px; }
+
+.logo { width: 60px; height: auto; display: block; }
+
+.plus { opacity: 0.9; -webkit-transition: 1s; transition: 1s; z-index: 10; }
+
+.zero { opacity: 0; -webkit-transition: 1s; transition: 1s; }
+
+.fas { margin-top: 2.3vh; }
+/*# sourceMappingURL=hackers1.css.map */
