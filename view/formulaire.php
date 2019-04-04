@@ -1,16 +1,3 @@
-<?php
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$mail = $_POST['e-mail'];
-$pays = $_POST['pays'];
-$message = $_POST['message'];
-$genre = $_POST['genre'];
-$sujet = $_POST['sujet'];   
-
-$data = array ($nom, $prenom, $mail, $pays, $genre, $sujet, $message);
-print_r($data);
-?>
-
 <main class="formPage">  
     
         <img class="imgForm" src="./assets/img/hackers.png" alt ="logoHackers">
@@ -18,10 +5,10 @@ print_r($data);
             <p> Pour tout renseignement, information, ou plainte, veuillez nous contacter via le formulaire ci-dessous. Nous nous ferons un plaisir de vous répondre dans les plus bref délais!</p>    
     <section class="mainForm">
         <div class="container form">   
-                <form class="col-md-12" role="form" name="inscription" method="post" action="view/formulaire.php" id='form'>
+                <form class="col-md-12" role="form" name="inscription" method="post" action="view/envoi.php" id='form'>
                     <div class = "row">
                         <div class="all col-md-6">  
-                        
+                            <input type="hidden" name="bot" required>
                             <label for="lastname" >Nom:</label>
                             <input class="form-control" type="text" placeholder="Votre nom" name="nom" required>
                         
@@ -30,13 +17,13 @@ print_r($data);
 
                             
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="homme" value="homme" checked>
+                                <input class="form-check-input" type="radio" name="genre" id="homme" value="Homme" checked>
                                 <label class="form-check-label" for="genreH">
                                     Homme
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="femme" value="femme">
+                                <input class="form-check-input" type="radio" name="genre" id="femme" value="Femme">
                                 <label class="form-check-label" for="genreF">
                                     Femme
                                 </label>
@@ -52,7 +39,7 @@ print_r($data);
                         <div class="all col-md-6"> 
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Pays</label>
-                                <select name="pays" class="form-control" id="exampleFormControlSelect1">
+                                <select name="pays" class="form-control" id="FormPays">
                                 <optgroup label="Afrique">
                                 <option value="afriqueDuSud">Afrique Du Sud</option>
                                 <option value="algerie">Algérie</option>
