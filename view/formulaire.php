@@ -5,41 +5,43 @@
             <p> Pour tout renseignement, information, ou plainte, veuillez nous contacter via le formulaire ci-dessous. Nous nous ferons un plaisir de vous répondre dans les plus bref délais!</p>    
     <section class="mainForm">
         <div class="container form">   
-        <form class="col-md-12" role="form" name="inscription" method="post" action="view/envoi.php" id='form'>
+                <form class="col-md-12" role="form" name="inscription" method="post" action="view/envoi.php" id='form'>
                     <div class = "row">
                         <div class="all col-md-6">  
                             <input type="hidden" name="bot" required>
-                            <label for="lastname" >Nom:</label>
-                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre nom" name="nom" required>
-                        
-                            <label for="firstname">Prénom:</label>
-                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre prénom" name="prenom" required/>
+                            <label for="nom" >Nom:</label>
+                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre nom" name="nom"id="nom" required>
 
+                            <label for="prenom">Prénom:</label>
+                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre prénom" name="prenom" id="prenom" required/>
                             
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="homme" value="Homme" checked>
-                                <label class="form-check-label" for="genreH">
-                                    Homme
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="genre" id="femme" value="Femme">
-                                <label class="form-check-label" for="genreF">
-                                    Femme
-                                </label>
-                            </div>
-
+                            <fieldset>
+                                <legend>Quel est votre sexe?</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genre" id="genreH" value="Homme" checked>
+                                    <label class="form-check-label" for="genreH">
+                                        Homme
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genre" id="genreF" value="Femme">
+                                    <label class="form-check-label" for="genreF">
+                                        Femme
+                                    </label>
+                                </div>
+                            </fieldset>
+                            
                             <div class="form-group">
-                                <label for="InputEmail1">E-mail:</label>
-                                <input type="email" name="e-mail" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+                                <label for="e-mail">E-mail:</label>
+                                <input type="email" name="e-mail" class="form-control" id="e-mail" aria-describedby="emailHelp" placeholder="Adresse e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
                                 <small id="emailHelp" class="form-text text-muted">Nous ne partagerons votre e-mail avec personne</small>
                             </div>
                         </div>  
 
                         <div class="all col-md-6"> 
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1">Pays</label>
-                                <select name="pays" class="form-control" id="FormPays">
+                                <label for="pays">Pays</label>
+                                <select name="pays" class="form-control" id="pays">
                                 <optgroup label="Afrique">
                                 <option value="afriqueDuSud">Afrique Du Sud</option>
                                 <option value="algerie">Algérie</option>
@@ -245,8 +247,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="choixsujet">Sujet abordé</label>
-                                <select name="sujet" class="form-control" id="choix">
+                                <label for="sujet">Sujet abordé</label>
+                                <select name="sujet" class="form-control" id="sujet">
                                 <option>Conseil</option>
                                 <option>Question</option>
                                 <option>Réclamation</option>
@@ -255,8 +257,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="texte">Message:</label>
-                                <textarea name="message" type="text" class="form-control" id="texteMessage" rows="3"></textarea>
+                                <label for="message">Message:</label>
+                                <textarea name="message" type="text" class="form-control" id="message" rows="3"></textarea>
                             </div>
                         
                         </div>
