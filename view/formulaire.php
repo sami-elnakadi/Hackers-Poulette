@@ -5,15 +5,15 @@
             <p> Pour tout renseignement, information, ou plainte, veuillez nous contacter via le formulaire ci-dessous. Nous nous ferons un plaisir de vous répondre dans les plus bref délais!</p>    
     <section class="mainForm">
         <div class="container form">   
-                <form class="col-md-12" role="form" name="inscription" method="post" action="view/envoi.php" id='form'>
+        <form class="col-md-12" role="form" name="inscription" method="post" action="view/envoi.php" id='form'>
                     <div class = "row">
                         <div class="all col-md-6">  
                             <input type="hidden" name="bot" required>
                             <label for="lastname" >Nom:</label>
-                            <input class="form-control" type="text" placeholder="Votre nom" name="nom" required>
+                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre nom" name="nom" required>
                         
                             <label for="firstname">Prénom:</label>
-                            <input class="form-control" type="text" placeholder="Votre prénom" name="prenom" required/>
+                            <input class="form-control" type="text" maxlength="30" pattern="[A-Za-z]{3,}" placeholder="Votre prénom" name="prenom" required/>
 
                             
                             <div class="form-check">
@@ -247,16 +247,16 @@
                             <div class="form-group">
                                 <label for="choixsujet">Sujet abordé</label>
                                 <select name="sujet" class="form-control" id="choix">
-                                <option>Sujet1</option>
-                                <option>Sujet2</option>
-                                <option>Sujet3</option>
+                                <option>Conseil</option>
+                                <option>Question</option>
+                                <option>Réclamation</option>
                                 <option>Autre</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
                                 <label for="texte">Message:</label>
-                                <textarea name="message" class="form-control" id="texteMessage" rows="3"></textarea>
+                                <textarea name="message" type="text" class="form-control" id="texteMessage" rows="3"></textarea>
                             </div>
                         
                         </div>

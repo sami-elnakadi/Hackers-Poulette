@@ -34,9 +34,9 @@ $options = array (
        $result[$key]=trim($result[$key]);
         } 
   
-    $headers = $nom." ".$prenom." <".$mail.">"; 
+    $headers = $result['nom']." ".$result['prenom']." <".$result['e-mail'].">"; 
     if($bot ==''){
-    mail('sami.elnakadi@gmail.com', $sujet, $message, $headers);
+    mail('sami.elnakadi@gmail.com', $result['sujet'], $result['message'] , $headers);
     }
 ?>
 

@@ -5,7 +5,7 @@
             <div class="card col-11" style="width: 18rem;">
                 <div class="row no-gutters">
                     <div class="col-md-6">
-                        <img src="./assets/img/rasp1.jpg" class="card-img" alt="...">
+                        <img src="./assets/img/rasp1.jpg" class="card-img" alt="Image produit 1">
                     </div>
                     <div class="col-md-6">
                         <div class="card-body">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="card col-5" style="width: 18rem;">
-                <img src="./assets/img/rasp2.jpg" class="card-img-top" alt="...">
+                <img src="./assets/img/rasp2.jpg" class="card-img-top" alt="Image produit 2">
                 <div class="card-body">
                     <h4 class="card-title">Compute Module 3+/32GB</h4>
                     <p class="card-text">Our third-generation Compute Module with 32GB eMMC storage.</p>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="card col-5" style="width: 18rem;">
-                <img src="./assets/img/rasp3.jpg" class="card-img-top" alt="...">
+                <img src="./assets/img/rasp3.jpg" class="card-img-top" alt="Image produit 3">
                 <div class="card-body">
                     <h4 class="card-title">Raspberry Pi 3 Model A+</h4>
                     <p class="card-text">Our third-generation single-board computer, now in the A+ format.</p>

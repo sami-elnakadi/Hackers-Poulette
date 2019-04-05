@@ -21,7 +21,7 @@ Il est fourni nu, c'est-à-dire la carte mère seule, sans boîtier, alimentatio
         <h2> Nouveautés</h2>
         <div class="card-deck">
         <div class="card">
-            <img src="./assets/img/rasp1.jpg" class="card-img-top" alt="...">
+            <img src="./assets/img/rasp1.jpg" class="card-img-top" alt="Image produit 1">
             <div class="card-body">
             <h5 class="card-title">Raspberry Pi 3 Model B+</h5>
             <p class="card-text">1.4GHz 64-bit quad-core processor, dual-band wireless LAN, Bluetooth 4.2/BLE, faster Ethernet, and Power-over-Ethernet support (with separate PoE HAT)</p>
@@ -29,7 +29,7 @@ Il est fourni nu, c'est-à-dire la carte mère seule, sans boîtier, alimentatio
             </div>
         </div>
         <div class="card">
-            <img src="./assets/img/rasp2.jpg" class="card-img-top" alt="...">
+            <img src="./assets/img/rasp2.jpg" class="card-img-top" alt="Image produit 2">
             <div class="card-body">
             <h5 class="card-title">Compute Module 3+/32GB</h5>
             <p class="card-text">The Compute Module 3+ (CM3+) is a Raspberry Pi 3 Model B+ in a flexible form factor, intended for industrial applications</p>
@@ -37,7 +37,7 @@ Il est fourni nu, c'est-à-dire la carte mère seule, sans boîtier, alimentatio
             </div>
         </div>
         <div class="card">
-            <img src="./assets/img/rasp3.jpg" class="card-img-top" alt="...">
+            <img src="./assets/img/rasp3.jpg" class="card-img-top" alt="Image produit 3">
             <div class="card-body">
             <h5 class="card-title">Raspberry Pi 3 Model A+</h5>
             <p class="card-text">1.4GHz 64-bit quad-core processor, dual-band wireless LAN, Bluetooth 4.2/BLE in the same mechanical format as the Raspberry Pi 1 Model A+</p>
